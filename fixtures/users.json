@@ -1,0 +1,20 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$1A293aeHS6NC$tqHvrtMB2h/XREKusAQD4DUIkonbGwZSdiVQeOb43Cg=",
+        "last_login": "2020-10-02T10:32:23Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@shop.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-09-25T12:41:23Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
