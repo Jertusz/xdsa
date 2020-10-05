@@ -47,6 +47,7 @@ class UserOrderList(generics.ListAPIView):
 
 
     def list(self, request, pk):
+        print(pk)
         try:
             queryset = self.get_queryset()
         except Order.DoesNotExist:
@@ -55,7 +56,10 @@ class UserOrderList(generics.ListAPIView):
         return Response(serializer.data)
 
     def get_queryset(self):
-        queryset = Order.objects.filter(user=self.request.user)
+        if self.request.user.groups.filter(name='staff').exists():
+            queryset = Order.objects.filter(user=self.kwargs['pk'])
+        else:
+            queryset = Order.objects.filter(user=self.request.user)
         return queryset
 
 
