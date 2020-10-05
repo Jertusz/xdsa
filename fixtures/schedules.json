@@ -1,0 +1,1 @@
+[{"model": "django_q.schedule", "pk": 2, "fields": {"name": "sales rep", "func": "api.tasks.send_report", "hook": null, "args": "", "kwargs": "", "schedule_type": "D", "minutes": 1, "repeats": -1, "next_run": "2020-10-05T09:14:30Z", "cron": null, "task": "13acde8880b241e69a8eded04a98431c"}}]
